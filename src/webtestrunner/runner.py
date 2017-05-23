@@ -1,6 +1,9 @@
 from nose.core import TextTestRunner
 from nose.loader import TestLoader
-from StringIO import StringIO
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
 
 
 class TestRunner(object):
@@ -33,7 +36,7 @@ if __name__ == "__main__":
     result = TestRunner().run("TestToolsTestCase.test_environ_defaults", "flask.testsuite.testing")
     # result = TestRunner().run("MockTests.test_fail", "webtestrunner.tests.tests")
     # result = TestRunner().run("MockTests.test_ensure_running", "webtestrunner.tests.tests")
-    print result
+    print (result)
 
 
 
