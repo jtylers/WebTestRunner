@@ -77,5 +77,5 @@ def list_tests(name):
 
 if __name__ == "__main__":
     tests = list_tests("flask")
-    print tests
+    print (tests)
 
