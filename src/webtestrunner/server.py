@@ -74,7 +74,7 @@ def main():
     app.secret_key = """,kegk8rNQWz9)T}fvy*",*Et>:_W~\m4KxDjva%5&8LSI'WaM~RNe\.iJ6*r2J5"""
     webbrowser.open("http://localhost:4050")
 
-    print "http://localhost:4050"
+    print ("http://localhost:4050")
 
     # debug
     app.run(host='0.0.0.0', port=4050, debug=True)
